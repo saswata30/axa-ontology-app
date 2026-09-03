@@ -1,0 +1,10 @@
+command: ["python", "app.py"]
+env:
+  - name: "DATABRICKS_WAREHOUSE_ID"
+    value: "4159f49475be8677"
+  - name: "GENIE_SPACE_ID"
+    value: "01f1a6263ecd1549a5569138a6f8be81"
+  - name: "ONTO_CATALOG"
+    value: "serverless_stable_xhky6g_catalog"
+  - name: "ONTO_SCHEMA"
+    value: "insurance"

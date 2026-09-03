@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AXA Insurance · Genie Ontology</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <div class="title-row">
+        <h1>AXA Insurance <span class="dot">·</span> Genie Ontology</h1>
+        <span class="subtitle">Knowledge graph of the governed insurance domain — assets, business rules, glossary &amp; Genie usage</span>
+      </div>
+      <div class="askbar">
+        <input id="q" placeholder="Ask a business question — e.g. What's our loss ratio by line of business?" />
+        <button id="askBtn">Ask Genie</button>
+        <button id="clearBtn" class="clear-btn">Clear</button>
+      </div>
+      <div class="examples" id="examples"><span>Try:</span></div>
+    </div>
+    <div class="body">
+      <div class="graph-wrap">
+        <div class="controls" id="controls"></div>
+        <div id="cy"></div>
+        <div class="legend-hint">Node size ∝ Genie usage (OntoRank). Click a node for detail · double-click to focus neighbours · ask a question to light up the inference path.</div>
+      </div>
+      <div class="side">
+        <div class="tabs" id="tabs"></div>
+        <div class="tab-body" id="tabBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/vendor/layout-base.js"></script>
+  <script src="/vendor/cose-base.js"></script>
+  <script src="/vendor/cytoscape.min.js"></script>
+  <script src="/vendor/cytoscape-fcose.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

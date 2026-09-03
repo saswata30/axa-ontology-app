@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+# macOS
+.DS_Store
+# Secrets / local
+.env
+.env.*
+*.pem
+.databrickscfg
+# scratch
+*.log
+_*.json
+smoke.log
+ui_*.png
+deploy_src/
